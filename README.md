@@ -10,14 +10,10 @@
 
 ```bash
 git clone git@github.com:nagashima-w/study-dockerfile.git
-cd go-hello-huge
-docker build -t test:huge .
+cd go-hello-bad
+docker build -t study:go-hello-bad .
 docker image ls
 docker run -d -p 3000:3000
 curl localhost:3000
 ```
 
-たぶん`curl`の実行結果として`Hello World`が返ってきたと思います  
-しかしこのDockerfileはイケてないのでいい感じにリファクタリングしてみてください
-
-このリポジトリにあるDockerfileでは、最終的に880MB -> 12.1MBまで軽量化しました
