@@ -13,7 +13,7 @@ git clone git@github.com:nagashima-w/study-dockerfile.git
 cd go-hello-bad
 docker build -t study:go-hello-bad .
 docker image ls
-docker run -d -p 3000:3000
+docker run -d -p 3000:3000 study:go-hello-bad
 curl localhost:3000
 ```
 
